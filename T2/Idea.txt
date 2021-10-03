@@ -1,0 +1,2 @@
+Usar los punteros para desplazar con un while y/o for de forma de que se almacena 
+los valores que se necesitan en una variable aparte para poder insertar en los puestos que queremos. 
