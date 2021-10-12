@@ -3,5 +3,5 @@ typedef struct nodo {
   struct nodo *izq, *der;
 } Nodo;
 
-void descomponer(Nodo* t, int z, Nodo **pinf, Nodo **psup);
+void descomponer(Nodo *t, int z, Nodo **pinf, Nodo **psup);
 void descomposicion(Nodo *t, int z, Nodo **pinf, Nodo **psup);
