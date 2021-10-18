@@ -1,0 +1,3 @@
+coquimbo.arr
+algarrobo.arr
+santiago.arr
