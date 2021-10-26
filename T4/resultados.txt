@@ -1,0 +1,144 @@
+==== make run ====
+cc -O -Wall -Werror -pedantic -std=c18  gengrafos.c pss.c  -o gengrafos.bin-O
+cc -O -Wall -Werror -pedantic -std=c18  testgrafos.c leergrafo.c pss.c  -o testgrafos.bin-O
+Generando archivos con grafos
+./gengrafos.bin-O
+Grafo en el archivo coquimbo.gf
+
+Coquimbo -> 1 :
+--------------------------------------------
+Grafo en el archivo algarrobo.gf
+
+Algarrobo -> 1 : Casablanca
+Casablanca -> 2 :
+--------------------------------------------
+Grafo en el archivo antofagasta.gf
+
+antofagasta -> 1 : calama
+calama -> 2 : antofagasta, iquique
+iquique -> 3 : antofagasta
+--------------------------------------------
+Grafo en el archivo las-cruces.gf
+
+Las Cruces -> 1 : Llolleo, Santo Domingo, Rapel
+Llolleo -> 2 : Las Cruces, Santo Domingo, Rapel, Pichilemu
+Santo Domingo -> 3 : Llolleo, Rapel
+Rapel -> 4 : Llolleo, Rapel, Pichilemu, Chillan, Las Cruces
+Rapel -> 5 : Rapel, Pichilemu
+Pichilemu -> 6 : Llolleo, Rapel, Chillan
+Chillan -> 7 : Pichilemu, Rapel, Chacao, Las Cruces, Llolleo
+Chacao -> 8 : Chillan, Ancud
+Ancud -> 9 : Ahui, Chacao
+Ahui -> 10 : Ancud
+--------------------------------------------
+./testgrafos.bin coquimbo.gf algarrobo.gf antofagasta.gf las-cruces.gf
+diff run.log run.ref
+Felicitaciones: Test aprobado
+==== make run-g ====
+cc -g -Wall -Werror -pedantic -std=c18  gengrafos.c pss.c  -o gengrafos.bin-g
+cc -g -Wall -Werror -pedantic -std=c18  testgrafos.c leergrafo.c pss.c  -o testgrafos.bin-g
+Generando archivos con grafos
+./gengrafos.bin-g
+Grafo en el archivo coquimbo.gf
+
+Coquimbo -> 1 :
+--------------------------------------------
+Grafo en el archivo algarrobo.gf
+
+Algarrobo -> 1 : Casablanca
+Casablanca -> 2 :
+--------------------------------------------
+Grafo en el archivo antofagasta.gf
+
+antofagasta -> 1 : calama
+calama -> 2 : antofagasta, iquique
+iquique -> 3 : antofagasta
+--------------------------------------------
+Grafo en el archivo las-cruces.gf
+
+Las Cruces -> 1 : Llolleo, Santo Domingo, Rapel
+Llolleo -> 2 : Las Cruces, Santo Domingo, Rapel, Pichilemu
+Santo Domingo -> 3 : Llolleo, Rapel
+Rapel -> 4 : Llolleo, Rapel, Pichilemu, Chillan, Las Cruces
+Rapel -> 5 : Rapel, Pichilemu
+Pichilemu -> 6 : Llolleo, Rapel, Chillan
+Chillan -> 7 : Pichilemu, Rapel, Chacao, Las Cruces, Llolleo
+Chacao -> 8 : Chillan, Ancud
+Ancud -> 9 : Ahui, Chacao
+Ahui -> 10 : Ancud
+--------------------------------------------
+./testgrafos.bin coquimbo.gf algarrobo.gf antofagasta.gf las-cruces.gf
+diff run.log run.ref
+Felicitaciones: Test aprobado
+==== make run-san ====
+cc -g -fsanitize=address -DSANITIZE -Wall -Werror -pedantic -std=c18  gengrafos.c pss.c  -o gengrafos.bin-san
+cc -g -fsanitize=address -DSANITIZE -Wall -Werror -pedantic -std=c18  testgrafos.c leergrafo.c pss.c  -o testgrafos.bin-san
+Generando archivos con grafos
+./gengrafos.bin-san
+Grafo en el archivo coquimbo.gf
+
+Coquimbo -> 1 :
+--------------------------------------------
+Grafo en el archivo algarrobo.gf
+
+Algarrobo -> 1 : Casablanca
+Casablanca -> 2 :
+--------------------------------------------
+Grafo en el archivo antofagasta.gf
+
+antofagasta -> 1 : calama
+calama -> 2 : antofagasta, iquique
+iquique -> 3 : antofagasta
+--------------------------------------------
+Grafo en el archivo las-cruces.gf
+
+Las Cruces -> 1 : Llolleo, Santo Domingo, Rapel
+Llolleo -> 2 : Las Cruces, Santo Domingo, Rapel, Pichilemu
+Santo Domingo -> 3 : Llolleo, Rapel
+Rapel -> 4 : Llolleo, Rapel, Pichilemu, Chillan, Las Cruces
+Rapel -> 5 : Rapel, Pichilemu
+Pichilemu -> 6 : Llolleo, Rapel, Chillan
+Chillan -> 7 : Pichilemu, Rapel, Chacao, Las Cruces, Llolleo
+Chacao -> 8 : Chillan, Ancud
+Ancud -> 9 : Ahui, Chacao
+Ahui -> 10 : Ancud
+--------------------------------------------
+./testgrafos.bin coquimbo.gf algarrobo.gf antofagasta.gf las-cruces.gf
+diff run.log run.ref
+Felicitaciones: Test aprobado
+==== make run32 ====
+cc -O -m32 -Wall -Werror -pedantic -std=c18  gengrafos.c pss.c  -o gengrafos.bin32
+cc -O -m32 -Wall -Werror -pedantic -std=c18  testgrafos.c leergrafo.c pss.c  -o testgrafos.bin32
+Generando archivos con grafos
+./gengrafos.bin32
+Grafo en el archivo coquimbo.gf
+
+Coquimbo -> 1 :
+--------------------------------------------
+Grafo en el archivo algarrobo.gf
+
+Algarrobo -> 1 : Casablanca
+Casablanca -> 2 :
+--------------------------------------------
+Grafo en el archivo antofagasta.gf
+
+antofagasta -> 1 : calama
+calama -> 2 : antofagasta, iquique
+iquique -> 3 : antofagasta
+--------------------------------------------
+Grafo en el archivo las-cruces.gf
+
+Las Cruces -> 1 : Llolleo, Santo Domingo, Rapel
+Llolleo -> 2 : Las Cruces, Santo Domingo, Rapel, Pichilemu
+Santo Domingo -> 3 : Llolleo, Rapel
+Rapel -> 4 : Llolleo, Rapel, Pichilemu, Chillan, Las Cruces
+Rapel -> 5 : Rapel, Pichilemu
+Pichilemu -> 6 : Llolleo, Rapel, Chillan
+Chillan -> 7 : Pichilemu, Rapel, Chacao, Las Cruces, Llolleo
+Chacao -> 8 : Chillan, Ancud
+Ancud -> 9 : Ahui, Chacao
+Ahui -> 10 : Ancud
+--------------------------------------------
+./testgrafos.bin coquimbo.gf algarrobo.gf antofagasta.gf las-cruces.gf
+diff run.log run.ref
+Felicitaciones: Test aprobado

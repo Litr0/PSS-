@@ -16,6 +16,7 @@ Item **leerItemes(char *nomFile, int *pn) {
     fread(&len,sizeof(len),1,f); //se extrae el largo del caracter que se lee a continuación
     char *b=malloc(len+1); //almacen con malloc de un nombre
     fread(b,len,1,f); //lectura con el char b y  del largo del caracter
+    *(b+len) = 0;
     a->nom=b;  //cambiamos el nombre en a por b
     double p;
     fread(&p,sizeof(a->peso),1,f); //extraemos peso

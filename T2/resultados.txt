@@ -4,7 +4,7 @@ Midiendo cuanto demora la solucion del profesor
 rm -f tiempo-ref.txt
 chmod +x prof.ref
 ./prof.ref ref > /dev/null
-Tiempo de referencia =  1665
+Tiempo de referencia =  1677
 Verificando y comparando con su solucion
 ./test-desplazar.bin `cat tiempo-ref.txt`
 Test unitarios
@@ -144,8 +144,8 @@ Test aprobado
 8vo. test: desplazamiento de "cardinales" en -17 posiciones con desborde
 Test aprobado
 Benchmark
-Tiempo de cpu usado por su version: 910 milisegundos
-Porcentaje de sobrecosto: -44 %
+Tiempo de cpu usado por su version: 935 milisegundos
+Porcentaje de sobrecosto: -43 %
 Felicitaciones: su tarea aprobo todos los tests
 ==== make run-g ====
 cc -g -Wall -Werror -pedantic -std=c18  desplazar.c test-desplazar.c -lm -o test-desplazar.bin-g
@@ -287,7 +287,7 @@ Test aprobado
 8vo. test: desplazamiento de "cardinales" en -17 posiciones con desborde
 Test aprobado
 Benchmark
-Tiempo de cpu usado por su version: 402 milisegundos
+Tiempo de cpu usado por su version: 399 milisegundos
 Felicitaciones: su tarea aprobo todos los tests
 ==== make run-san ====
 cc -g -fsanitize=address -DSANITIZE -Wall -Werror -pedantic -std=c18  desplazar.c test-desplazar.c -lm -o test-desplazar.bin-san
@@ -429,7 +429,7 @@ Test aprobado
 8vo. test: desplazamiento de "cardinales" en -17 posiciones con desborde
 Test aprobado
 Benchmark
-Tiempo de cpu usado por su version: 1122 milisegundos
+Tiempo de cpu usado por su version: 1217 milisegundos
 Felicitaciones: su tarea aprobo todos los tests
 ==== make run32 ====
 cc -O -m32 -Wall -Werror -pedantic -std=c18  desplazar.c test-desplazar.c -lm -o test-desplazar.bin32
