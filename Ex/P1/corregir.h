@@ -1,0 +1,1 @@
+void corregir(char *s);
